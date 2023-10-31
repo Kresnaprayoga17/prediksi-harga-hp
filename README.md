@@ -80,6 +80,10 @@ Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:
 
   Pengambilan data disini saya mendapatkan datasetnya dari dari website kaggle bernama mobile price prediction, untuk link datasets sudah saya attach di bagian #data understanding.
 
+### Data Discovery and Visualization 
+  
+  Untuk bagian Data discovery saya menggunakan teknik EDA
+  
   adapun library yg saya gunakan kali ini yaitu :
   ```
   import pandas as pd
@@ -92,6 +96,21 @@ Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:
   dan library yg di gunakan untuk eksport dan import sav :
   ```
   import pickle
+  ```
+
+  Selanjutnya untuk import API Kaggle saya menggunkan Teknik berikut :
+  
+  ```
+  from google.colab import files
+  files.upload()  
+  ```
+  Lalu, untuk menyimpan file kaggle.json melalui google collab:
+
+  ```
+  !mkdir -p ~/.kaggle
+  !cp kaggle.json ~/.kaggle/
+  !chmod 600 ~/.kaggle/kaggle.json
+  !ls ~/.kaggle
   ```
 
 ## Modeling
