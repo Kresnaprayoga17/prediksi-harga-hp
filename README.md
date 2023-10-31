@@ -131,22 +131,22 @@ Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:
   ```
   df.head()
   ```
-  ![Alt text](img1.jepg)
+  ![Alt text](img1.jpeg)<br> 
   lalu, kita perlu cek collum yg ada di dataset :
   ```
   df.info()
   ```
-  ![Alt text](img2.jepg)
+  ![Alt text](img2.jpeg)<br> 
   selanjutnya, kita cek kekosongan data menggunakan heatmap :
   ```
   sns.heatmap(df.isnull())
   ```
-  ![Alt text](img3.jepg)
+  ![Alt text](img3.jpeg)<br> 
   setelah itu kita perlu mencek isi dataset menggunakan df.describe :
   ```
   df.describe()
   ```
-  ![Alt text](img4.jepg)
+  ![Alt text](img4.jpeg)<br> 
 ## Modeling
 
 ### Seleksi Fitur
