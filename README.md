@@ -31,7 +31,7 @@ Dataset ini berasal jadi Kaggle yang berisi harga Mobile Phone. Dataset ini meng
 
 Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
 
-### Variabel-variabel pada Heart Failure Prediction Dataset adalah sebagai berikut:
+### Variabel-variabel pada Mobile Price Prediction adalah sebagai berikut:
 
 - Product_id : ID of each cellphone.<br> 
   type data : int64 <br> 
