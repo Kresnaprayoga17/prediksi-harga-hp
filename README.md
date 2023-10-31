@@ -113,6 +113,40 @@ Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:
   !ls ~/.kaggle
   ```
 
+  Berikutnya, kita mendownload dataset dari keggle nya :
+
+  ```
+  !kaggle datasets download -d mohannapd/mobile-price-prediction
+  ```
+
+  setelah itu kita perlu mengekstrak dataset yg sudah didownload tadi:
+
+  ```
+  !mkdir mobile-price-prediction
+  !unzip mobile-price-prediction
+  !ls mobile-price-prediction
+  ```
+
+  Setelah koneksi kaggke dan deklarasi library, maka kita perlu mendeskripsikan variabel :
+  ```
+  df.head()
+  ```
+  ![Alt text](img1.jepg)
+  lalu, kita perlu cek collum yg ada di dataset :
+  ```
+  df.info()
+  ```
+  ![Alt text](img2.jepg)
+  selanjutnya, kita cek kekosongan data menggunakan heatmap :
+  ```
+  sns.heatmap(df.isnull())
+  ```
+  ![Alt text](img3.jepg)
+  setelah itu kita perlu mencek isi dataset menggunakan df.describe :
+  ```
+  df.describe()
+  ```
+  ![Alt text](img4.jepg)
 ## Modeling
 
 ### Seleksi Fitur
