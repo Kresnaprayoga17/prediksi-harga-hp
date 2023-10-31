@@ -147,6 +147,35 @@ Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:
   df.describe()
   ```
   ![Alt text](img4.jpeg)<br> 
+
+  lanjut visualisasi data yg pertama kita cek datanya lewat heatmap :
+  ```
+  plt.figure(figsize=(10,8))
+  sns.heatmap(df.corr(),annot=True)
+  ```
+  ![Alt text](img5.jpeg)<br> 
+  selanjutnya kita cek salah satu kolomnya kita cek data ram dan data penjualan
+  ```
+  ram = df.groupby('ram').count()[['Sale']].sort_values(by='Sale',ascending=True).reset_index()
+  ram = ram.rename(columns={'Sale':'RAMSize'})
+  ```
+  ```
+  plt.figure(figsize=(15,5))
+  sns.barplot(x=ram['ram'], y=ram['RAMSize'], color='royalblue')
+  ```
+  ![Alt text](img6.jpeg)<br> 
+  untuk data penjualannya :
+  ```
+  plt.figure(figsize=(15,5))
+  sns.distplot(df['Sale'])
+  ```
+  ![Alt text](img7.jpeg)<br> 
+  dan terakhir kita tampilkan data harga di dataset :
+  ```
+  plt.figure(figsize=(15,5))
+  sns.distplot(df['Price'])
+  ```
+  ![Alt text](img8.jpeg)<br> 
 ## Modeling
 
 ### Seleksi Fitur
